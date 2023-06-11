@@ -43,19 +43,23 @@ def apply_input(set):
     elif input_condition == "like":
         keyboard.press(Key.up)
         keyboard.release(Key.up)
-        sleep(0.5)
+        print("like")
+        sleep(0.3)
     elif input_condition == "dislike":
         keyboard.press(Key.down)
         keyboard.release(Key.down)
-        sleep(0.5)
+        print("dislike")
+        sleep(0.3)
     elif input_condition == "stop":
         keyboard.press(Key.space)
         keyboard.release(Key.space)
-        sleep(0.5)
+        print("stop/go")
+        sleep(0.3)
     elif input_condition == "rock":
         keyboard.press(Key.right)
         keyboard.release(Key.right)
-        sleep(0.5)
+        print("rock")
+        sleep(0.3)
 
 
 def check_for_input(arr):
